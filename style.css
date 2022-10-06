@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root{
+--VeryLightGray: hsl(0, 0%, 98%);
+--VeryLightGrayishBlue: hsl(236, 33%, 92%);
+--LightGrayishBlue: hsl(233, 11%, 84%);
+--DarkGrayishBlue: hsl(236, 9%, 61%);
+--VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+
+--VeryDarkBlue: hsl(235, 21%, 11%); /* DarkBackgroundColor */
+--VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+--LightGrayishBlue: hsl(234, 39%, 85%);
+--LightGrayishBlue : hsl(236, 33%, 92%); /*hover*/
+--DarkGrayishBlue: hsl(234, 11%, 52%);
+--VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+--VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+
+--theFont: 'Josefin Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(235, 21%, 11%);
+    font-family: var(--theFont);
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: url(./images/bg-mobile-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.sun{
+    display: block;
+    cursor: pointer;
+}
+.logo{
+    font-size: 2rem;
+}
+.moon{
+    cursor: pointer;
+    display: none;
+}
+
+.inputContainer input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: hsl(235, 24%, 19%);
+    border: none;
+    outline: none;
+    font-family: var(--theFont);
+    color: white;
+}
+
+.listContainer{
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 5px;
+    box-shadow: 0 0 50px 5px hsl(236, 9%, 61%);
+}
+
+
+.listItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.checkContainer{
+    border: 1px solid gray;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.func{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: hsl(234, 11%, 52%);
+}
+.func p{
+    cursor: pointer;
+}
+
+.filter{
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: hsl(234, 11%, 52%);
+}
+
+.info{
+    text-align: center;
+    color: hsl(233, 14%, 35%);
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+
+.listItem.checked{
+    text-decoration: line-through;
+}
+.listItem.checked .checkContainer{
+    background:  url(./images/icon-check.svg), linear-gradient(120deg, rgb(49, 159, 250), rgb(252, 117, 232));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 10px;
+}
+
+.all, .completed, .Active{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    .container{
+        padding: 100px 400px;
+        background: url(./images/bg-desktop-dark.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}

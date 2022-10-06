@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <title>Frontend Mentor | Todo app</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <nav>
+      <span class="logo">TODO</span>
+      <img src="./images/icon-sun.svg" alt="" class="sun">
+      <img src="./images/icon-moon.svg" alt="" class="moon" >
+    </nav>
+
+    <div class="inputContainer">
+      <input type="text" placeholder="Create a new todo...">
+    </div>
+
+    <div class="listContainer">
+
+      <div class="func">
+        <p class="leftItem">0 item left</p> <p class="clearCompleted">Clear Completed</p>
+      </div>
+
+    </div>
+
+    <div class="filter">
+      <p class="all">All</p>
+      <p class="Active">Active</p>
+      <p class="completed">Completed</p>
+    </div>
+
+    <p class="info">Drag and drop to reorder list</p>
+
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+</html>
